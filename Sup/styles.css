@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #24252a;
+}
+
+body{
+    font-family: "Quicksand", "Lato", sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main{
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    margin-inline: auto;
+    padding: 1rem;
+    align-items: flex-start;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 1.5rem;
+    margin-bottom: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.nav-list ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    font-weight: bold;
+}
+
+.nav-list li{
+    list-style-type: none;
+    padding: 3px;
+    font-size: 17.5px;
+}
+
+.nav-list li a{
+    text-decoration: none;
+    color: white;
+    letter-spacing: 1px;
+    padding: 2px 15px;
+    border-radius: 300px;
+    transition: 0.2s ease-in-out;
+}
+
+.nav-list li:hover a{
+    background-color: #0088a9;
+    color: white;
+}
+
+.featured-image{
+    width: 100%;
+    max-height: 400px;
+    border-radius: 10px;
+    margin-right: 10px;
+    flex: left;
+    object-fit: cover;
+    object-position: center;
+}
+
+.content{
+    margin: 60px;
+    min-width: 70%;
+}
+
+.content h2{
+    margin-bottom: 25px;
+    color: white;
+    font-size: 30px;
+}
+
+.content p{
+    color: white;
+    margin-top: 15px;
+    text-align: justify;
+    font-size: 17px;
+}
+
+.box{
+    box-shadow: 0;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+aside{
+    display: flex;
+    width: 250%;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 90px;
+}
+
+.samping h2{
+    color: white;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.samping p{
+    margin: 0;
+    font-size: 1em;
+    line-height: 1.4;
+    color: white;
+}
+
+
+.bio{
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+footer{
+    color: white;
+    padding: 30px;
+}
+
+.sns ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.sns ul li{
+    display: inline;
+    margin-right: 20px;
+}
+
+.sns ul li a{
+    color: white;
+    font-size: 24px;
+}
+
+.sns ul li a:hover .fab.fa-youtube{
+    color: red;
+    transition: 0.5 ease-in-out;
+}
+
+.sns ul li a:hover .fab.fa-instagram{
+    color: #e4405f;
+}
+
+.strike p{
+    font-size: 14px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+@media (max-width: 768px){
+    header{
+        padding: 1rem;
+        margin-bottom: 100px;
+    }
+
+    .nav-list ul{
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .nav-list li{
+        padding: 10px 0;
+        font-size: 15px;
+    }
+
+    .content{
+        margin: 30px;
+    }
+
+    .featured-image{
+        max-height: 300px;
+    }
+
+    aside{
+        flex-direction: column;
+        width: 100%;
+        padding: 10px;
+        margin-top: 30px;
+    }
+}
